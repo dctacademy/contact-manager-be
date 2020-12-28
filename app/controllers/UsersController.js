@@ -27,12 +27,12 @@ module.exports.login = function (req, res) {
         .then(function (token) {
             // res.setHeader('x-auth', token).send({})
             res.json({
-                token,
-                user: {
-                    _id: userInfo.id,
-                    username: userInfo.username,
-                    email: userInfo.email
-                }
+                token
+                // user: {
+                //     _id: userInfo.id,
+                //     username: userInfo.username,
+                //     email: userInfo.email
+                // }
             })
         })
         .catch(function (err) {
