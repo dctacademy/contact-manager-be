@@ -10,6 +10,10 @@
     "dev": "concurrently \"nodemon index.js\" \"cd client && npm start\"",
     "install-packages": "concurrently \"npm install\" \"cd client && npm install\""
   },
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
