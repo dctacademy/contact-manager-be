@@ -7,7 +7,7 @@ const router = require('./config/routes')
 // const { usersRouter } = require('./app/controllers/UsersController')
 
 const app = express() 
-const port = 3010 
+const port = process.env.PORT || 3010 
 
 app.use(express.json())
 app.use(cors())
